@@ -41,3 +41,10 @@ npm run dev （建立本地測試機環境）
 ```
 npm run deploy
 ```
+如果 deploy 有 error：
+```
+git checkout master
+git subtree split --prefix dist -b gh-pages
+git push -f origin gh-pages:gh-pages
+git branch -D gh-pages
+```

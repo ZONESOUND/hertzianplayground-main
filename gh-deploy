@@ -5,7 +5,6 @@ then
   exit 1
 fi
 cp ./CNAME $1/CNAME
-exit 1
 git add .
 if [ -z "$2"]
 then
