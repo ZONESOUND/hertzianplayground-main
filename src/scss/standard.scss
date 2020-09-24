@@ -1,0 +1,100 @@
+@import "rules";
+
+/* -----------------
+RWD手機及桌機顯現判斷
+----------------- */
+.m-show {
+  @include pc-rwd {
+    display: none !important;
+  }
+
+  @include pad-high-rwd {
+    display: none !important;
+  }
+}
+
+.m-none {
+  @include mobile-rwd {
+    display: none !important;
+  }
+}
+
+.m-only-show {
+  @include hover-rwd {
+    display: none !important;
+  }
+
+  @include pad-low-rwd {
+    display: none !important;
+  }
+}
+
+.no-show {
+  position: absolute;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* -----------------
+表單樣式去預設化
+----------------- */
+
+input,
+select,
+textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* -----------------
+連結去除下底線
+----------------- */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------
+圖片框架
+--------------------- */
+
+.image-w {
+  font-size: 0;
+
+  img,
+  object {
+    width: 100%;
+    vertical-align: middle;
+  }
+}
+
+.image-h {
+  font-size: 0;
+
+  img,
+  object {
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
+img {
+  pointer-events: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* ---------
+svg 初始設定
+--------------------- */
+
+svg {
+  width: 100%;
+  height: 100%;
+}

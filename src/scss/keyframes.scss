@@ -1,0 +1,64 @@
+@import "rules";
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
+@keyframes shake2 {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
+@keyframes shake3 {
+  0% {
+    transform: translate3d(-50%, -50%, 0) rotate(0);
+  }
+  50% {
+    transform: translate3d(-50%, -50%, 0) rotate(2deg);
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0) rotate(-3deg);
+  }
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, 5%, 0);
+  }
+  100% {
+    transform: translate3d(0, -5%, 0);
+  }
+}

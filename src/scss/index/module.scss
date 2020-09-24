@@ -1,0 +1,286 @@
+@import "rules";
+
+/* -----------------
+全域布局
+----------------- */
+
+html.en {
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+
+  .play .text {
+    width: 35%;
+
+    @include mobile-only-rwd() {
+      width: 85%;
+    }
+  }
+
+  footer {
+    .content {
+      width: 90%;
+
+      .item{
+        &:first-child{
+          width: 25%;
+
+          @include pad-low-rwd {
+            width: 32%;
+          }
+
+          @include mobile-only-rwd {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  background: #000;
+
+  @include pc-rwd {
+    &::-webkit-scrollbar {
+      background: transparent;
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #fff;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #000;
+    }
+  }
+}
+
+/* -----------------
+區塊布局
+----------------- */
+
+header {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
+
+footer {
+  width: 100%;
+  padding: 5% 0;
+  position: relative;
+  background: #fff;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: skewY(-2deg);
+    transform-origin: 0 0;
+  }
+
+  .content {
+    width: 72%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    z-index: 2;
+
+    @include mobile-only-rwd() {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    @include pad-low-rwd() {
+      width: 80%;
+    }
+  }
+
+  .item {
+    width: 20%;
+
+    @include mobile-only-rwd() {
+      width: 60%;
+      margin: 5% auto 8%;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: row;
+
+      @include mobile-only-rwd() {
+        justify-content: center;
+      }
+
+      a {
+        width: 18%;
+        margin: 0 8% 0 0;
+        transition: 0.6s;
+
+        &:hover {
+          @include hover-rwd() {
+            transform: translate3d(0, -10%, 0);
+          }
+        }
+      }
+    }
+
+    .national {
+      width: 80%;
+
+      @include mobile-only-rwd() {
+        margin: 0 auto;
+      }
+
+      a {
+        display: block;
+      }
+    }
+
+    .support {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      a {
+        width: 48%;
+      }
+    }
+  }
+
+  h5 {
+    margin: 0 0 8%;
+
+    @include mobile-only-rwd() {
+      margin: 0 0 4%;
+    }
+  }
+}
+
+/* -----------------
+字體樣式
+----------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+.f-white {
+  color: #fff;
+}
+
+.f-black {
+  color: #333;
+}
+
+.f-blue {
+  color: #7bc3f8;
+}
+
+.f-yellow {
+  color: #fde995;
+}
+
+.f22 {
+  font-size: to-vw(22);
+  line-height: 1.5;
+  letter-spacing: to-vw(1.5);
+
+  @include mobile-only-rwd {
+    font-size: to-vw-mobile(18);
+  }
+}
+
+.f18 {
+  font-size: to-vw(18);
+  line-height: 1.5;
+  letter-spacing: to-vw(1.5);
+
+  @include mobile-only-rwd {
+    font-size: to-vw-mobile(14);
+    line-height: 1.8;
+  }
+}
+
+.f15 {
+  font-size: to-vw(15);
+  line-height: 1.5;
+  letter-spacing: to-vw(1.2);
+
+  @include mobile-only-rwd {
+    font-size: to-vw-mobile(13);
+    line-height: 1.8;
+  }
+}
+
+.f13 {
+  font-size: to-vw(13);
+  line-height: 1.5;
+  letter-spacing: to-vw(1);
+
+  @include mobile-only-rwd {
+    font-size: to-vw-mobile(10);
+    line-height: 2;
+  }
+}
+
+.f10 {
+  font-size: to-vw(10);
+  line-height: 1.5;
+  letter-spacing: to-vw(1);
+
+  @include mobile-only-rwd {
+    font-size: to-vw(6);
+  }
+}
+
+.f-center {
+  text-align: center;
+}
+
+.f-justify {
+  text-align: justify;
+}
+
+.f-italic {
+  font-style: italic;
+}
+
+.f-bold {
+  font-weight: 700;
+}
+
+.f-heighter {
+  line-height: 2;
+}
+
+.f-heightest {
+  line-height: 2.4;
+}
+
+.f-block {
+  @include mobile-only-rwd {
+    display: block;
+  }
+}

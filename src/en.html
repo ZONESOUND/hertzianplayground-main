@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh" class="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Hertzian Playground 赫茲遊樂場</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="《赫茲遊樂場》將智慧型手機與網路等已嵌入生活中的科技產品，想像成可由身體動態驅動的音樂表達介面，將日常科技使用轉化為表演手勢，促使人與裝置、聲音與肢體的共鳴交流，進而探索人與科技物的能動性與協同可能。
+    "
+    />
+    <meta name="Keywords" content="智慧型手機" />
+    <meta property="og:title" content="Hertzian Playground 赫茲遊樂場" />
+    <meta
+      property="og:description"
+      content="《赫茲遊樂場》將智慧型手機與網路等已嵌入生活中的科技產品，想像成可由身體動態驅動的音樂表達介面，將日常科技使用轉化為表演手勢，促使人與裝置、聲音與肢體的共鳴交流，進而探索人與科技物的能動性與協同可能。
+    "
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="https://hertzianplayground.art" />
+    <meta
+      property="og:image"
+      content="https://hertzianplayground.art/assets/ogshare.jpg"
+    />
+    <meta property="og:url" content="https://hertzianplayground.art" />
+    <meta property="og:locale" content="zh_tw" />
+    <meta property="twitter:card" content="" />
+    <meta property="twitter:title" content="Hertzian Playground 赫茲遊樂場" />
+    <meta
+      property="twitter:description"
+      content="《赫茲遊樂場》將智慧型手機與網路等已嵌入生活中的科技產品，想像成可由身體動態驅動的音樂表達介面，將日常科技使用轉化為表演手勢，促使人與裝置、聲音與肢體的共鳴交流，進而探索人與科技物的能動性與協同可能"
+    />
+    <meta
+      property="twitter:image"
+      content="https://hertzianplayground.art/assets/ogshare.jpg"
+    />
+    <meta property="twitter:image:width" content="1200" />
+    <meta property="twitter:image:height" content="630" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/favicon.png"
+      title="Hertzian Playground 赫茲遊樂場"
+    />
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <aside class="fixed-bg">
+      <img src="/image/bg.png" alt="" />
+    </aside>
+
+    <div class="lightbox js-lightbox">
+      <div class="wrap">
+        <div class="inner">
+          <div id="player"></div>
+          <div class="close"></div>
+        </div>
+      </div>
+    </div>
+
+    <article class="container">
+      <div class="main">
+        <div class="wrap">
+          <iframe
+            src="https://www.youtube.com/embed/ylMtm7KK7rM"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="language f13 f-white">
+        <p>
+          <a href="/">中文</a>
+        </p>
+        <p class="active">English</p>
+      </div>
+      <div class="title image-w">
+        <div class="inner">
+          <h1 class="no-show">Hertzian Playground 赫茲遊樂場</h1>
+          <img src="/image/title.png" alt="Hertzian Playground 赫茲遊樂場" />
+        </div>
+        <div class="slogen f-white f-center">
+          <h2 class="f15 f-italic">
+            “We shape our technologies, then our technologies shape us, <br>in ongoing cycles that produce our everyday physical and social environments. “
+          </h2>
+          <h3 class="f10 f-italic author">
+            <div class="line"></div>
+            William J.Mitchell”Me++: The Cyborg Self and The Networked City
+          </h3>
+        </div>
+        <div class="text">
+          <p class="f13 f-white f-center f-heighter">
+            “Hertzian Playground” imagines everyday technologies embedded in our
+            lives (i.e., smartphones and the Internet) as an interface for
+            musical expression driven by body dynamics. It turns daily usages of
+            technology into performative gestures that prompt the resonance and
+            exchange between people and devices, sound and body, exploring the
+            agencies and collaborative capacities between humans and artifacts.
+          </p>
+        </div>
+      </div>
+      <div class="videos image-w">
+        <div class="swiper-container" id="video-all">
+          <div class="btns btn-next">
+            <img src="/image/next.png" alt="" />
+          </div>
+          <div class="btns btn-prev">
+            <img src="/image/prev.png" alt="" />
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide shaker-h">
+              <div class="video-wrap js-play" data-video="ylMtm7KK7rM">
+                <div class="inner shaker">
+                  <video
+                    src="/assets/video/1.mp4"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                  ></video>
+                </div>
+                <div class="btn-play">
+                  <img src="/image/play.png" alt="" />
+                </div>
+              </div>
+              <div class="text">
+                <div class="icon">
+                  <img src="/image/icons/1.png" alt="SHAKER" />
+                </div>
+                <div class="m-title m-only-show">
+                  <img src="/image/video1.png" alt="" />
+                </div>
+                <p class="f13 f-white f-heighter">
+                  <span>Open the webpage and select SHAKER mode.</span>
+                  <span
+                    >Grant access to motion data and press the “Record” button
+                    for sampling.</span
+                  >
+                  <span
+                    >Record one-shot sample with your phone and shake it to the
+                    rhythm.</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide gyro-h">
+              <div class="video-wrap js-play" data-video="ylMtm7KK7rM">
+                <div class="inner gyro">
+                  <video
+                    src="/assets/video/2.mp4"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                  ></video>
+                </div>
+                <div class="btn-play">
+                  <img src="/image/play.png" alt="" />
+                </div>
+              </div>
+              <div class="text">
+                <div class="icon">
+                  <img src="/image/icons/2-1.png" alt="gyro" />
+                  <img class="float" src="/image/icons/2-2.png" alt="gyro" />
+                </div>
+                <div class="m-title m-only-show">
+                  <img src="/image/video2.png" alt="gyro" />
+                </div>
+                <p class="f13 f-white f-heighter">
+                  <span>Open the webpage and select GYRO mode.</span>
+                  <span
+                    >Grant access to motion data and and press the “Record”
+                    button for sampling.
+                  </span>
+                  <span
+                    >Record one-shot sample with your phone and shake it to the
+                    rhythm.
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide conductor-h">
+              <div class="video-wrap js-play" data-video="ylMtm7KK7rM">
+                <div class="inner conductor">
+                  <video
+                    src="/assets/video/3.mp4"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                  ></video>
+                </div>
+                <div class="btn-play">
+                  <img src="/image/play.png" alt="" />
+                </div>
+              </div>
+              <div class="text">
+                <div class="icon">
+                  <img src="/image/icons/3-1.png" alt="conductor" />
+                  <img
+                    class="float"
+                    src="/image/icons/3-2.png"
+                    alt="conductor"
+                  />
+                </div>
+                <div class="m-title m-only-show">
+                  <img src="/image/video3.png" alt="conductor" />
+                </div>
+                <p class="f13 f-white f-heighter">
+                  <span>Open the webpage and select CONDUCTOR mode.</span>
+                  <span
+                    >Grant access to motion data and hear music playing.</span
+                  >
+                  <span
+                    >Wave your phone to control the music with the speed of body
+                    movements.</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide balance-h">
+              <div class="video-wrap js-play" data-video="ylMtm7KK7rM">
+                <div class="inner balance">
+                  <video
+                    src="/assets/video/4.mp4"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                  ></video>
+                </div>
+                <div class="btn-play">
+                  <img src="/image/play.png" alt="" />
+                </div>
+              </div>
+              <div class="text">
+                <div class="icon">
+                  <img src="/image/icons/4.png" alt="balance" />
+                </div>
+                <div class="m-title m-only-show">
+                  <img src="/image/video4.png" alt="balance" />
+                </div>
+                <p class="f13 f-white f-heighter">
+                  <span>Open the webpage and select BALANCE mode.</span>
+                  <span
+                    >Grant access to motion data and try to keep the balance
+                    with your phone.</span
+                  >
+                  <span
+                    >Inattentive shakings cause noisy feedback that breaks
+                    peaceful ambience.</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tips f10 f-yellow f-center">
+          <span>Click the left and right arrows or drag</span>
+        </div>
+      </div>
+      <div class="play image-w">
+        <div class="text">
+          <div class="now m-none">
+            <img src="/image/playnow.png" alt="" />
+          </div>
+          <p class="f13 f-white f-heighter">
+            We designed several interactive prototypes and embedded them into a
+            webpage. As long as your smartphone is online with the project
+            webpage opened, you can sample and modulate audio through the
+            personal mobile device and interact with sounds surrounded in daily
+            lives.
+          </p>
+        </div>
+        <div class="qrcode">
+          <div class="wrap">
+            <div class="m-none">
+              <img
+                src="/image/qr.png"
+                alt="只要將自己的智慧型手機連接網路、開啟網頁，就能透過個人行動裝置來取樣與調變聲音，與生活周遭聲響互動。"
+              />
+            </div>
+            <div class="m-show">
+              <a
+                href="https://zonesound.github.io/hertzianplayground/"
+                target="_blank"
+              >
+                <img
+                  src="/image/playnow-black.png"
+                  alt="只要將自己的智慧型手機連接網路、開啟網頁，就能透過個人行動裝置來取樣與調變聲音，與生活周遭聲響互動。"
+                  class="shake"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about">
+        <h3 class="s-title f22 f-white f-center">About Hertzian Playground</h3>
+        <p class="f13 f-white f-heighter">
+          "Hertzian Playground" is the selected project of NTCH's "Next Theater"
+          open call, with members from diverse backgrounds including art, music,
+          performance, film, curating, and programming. In the post-epidemic
+          period, how can we utilize the advantages of digital technology to
+          establish closer cooperation among people and devices? How do
+          participants recognize their connection with others when using their
+          smartphones, feel the liveliness, and get their bodies back? "Hertzian
+          Playground" hopes to respond to these questions, starting from
+          prototyping to framework integrating and participatory practice, to
+          continuously explore the entanglement between humans and artifacts
+          with practical experience.
+          <br />
+          <br />
+          <a class="f-blue" href="mailto:info@zonesoundcreative.com"
+            >Contact us
+          </a>
+        </p>
+        <div class="not-only image-w">
+          <img src="/image/about.png" alt="不只在劇場" />
+        </div>
+      </div>
+    </article>
+
+    <aside class="fixed-btn m-only-show">
+      <div class="inner">
+        <div class="wrap">
+          <a
+            href="https://zonesound.github.io/hertzianplayground/"
+            target="_blank"
+          >
+            <img
+              src="/image/playnow-black.png"
+              alt="只要將自己的智慧型手機連接網路、開啟網頁，就能透過個人行動裝置來取樣與調變聲音，與生活周遭聲響互動。"
+          /></a>
+        </div>
+      </div>
+    </aside>
+
+    <footer>
+      <div class="content image-w">
+        <div class="item">
+          <h5 class="f18">Credits</h5>
+          <p class="f13 f-heighter">
+            Artist｜Po-Hao Chi<br />
+            Project Coordinator｜Ya-Tien Shih<br />
+            Programmer｜Jo-Yu Lo<br />
+            Chroagrapher｜Kuan-Jou Chou<br />
+            Director｜Pei-Yu Chiang
+          </p>
+        </div>
+        <div class="item">
+          <h5 class="f18">Links</h5>
+          <div class="links">
+            <a
+              href="https://www.facebook.com/zonesoundcreative/"
+              target="_blank"
+            >
+              <img src="/image/icons/fb.png" alt="" />
+            </a>
+            <a
+              href="https://www.instagram.com/zonesoundcreative/"
+              target="_blank"
+            >
+              <img src="/image/icons/ig.png" alt="" />
+            </a>
+            <a href="https://github.com/ZONESOUND" target="_blank">
+              <img src="/image/icons/github.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="item">
+          <h5 class="f18">Organizer</h5>
+          <div class="national">
+            <a href="http://npac-ntch.org/zh/" target="_blank">
+              <img src="/image/logos/natioal.png" alt="國家兩廳院" />
+            </a>
+          </div>
+        </div>
+        <div class="item">
+          <h5 class="f18">Co-Organizer</h5>
+          <div class="support">
+            <a href="https://zonesoundcreative.com" target="_blank">
+              <img src="/image/logos/zone.png" alt="融聲創意"
+            /></a>
+            <a href="https://www.rtta-film.com" target="_blank">
+              <img src="/image/logos/ben.png" alt="本初映畫"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <!-- swiper plugin -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>
