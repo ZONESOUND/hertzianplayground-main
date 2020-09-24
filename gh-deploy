@@ -4,6 +4,8 @@ then
   echo "Which folder do you want to deploy to GitHub Pages?"
   exit 1
 fi
+cp ./CNAME $1/CNAME
+exit 1
 git add .
 if [ -z "$2"]
 then
